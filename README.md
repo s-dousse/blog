@@ -1,24 +1,16 @@
-# README
+# Getting Started with Rails
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+1. install/update if needed :
+   - ruby
+   - sqlite3
+   - node
+   - yarn
+   - rails
 
-Things you may want to cover:
+2. => generator : `$ rails new blog`
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+### creating the first route (./config/routes.rb)
+   Routes are rules written in a Ruby DSL (Domain-Specific Language)
+   Controllers are Ruby classes, and their public methods are actions
+   Views are templates, usually written in a mixture of HTML and Ruby
+   => generator: `bin/rails generate controller Articles index --skip-routes` (route already created manually)
