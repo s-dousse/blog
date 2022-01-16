@@ -36,3 +36,7 @@ implement all CRUD operation on the resource :article
 => generator : `bin/rails generate model Comment commenter:string body:text article:references`
 run the migration with `bin/rails db:migrate`
 => generator : `bin/rails generate controller Comments`
+
+refactoring using Partials to render forms
+
+
