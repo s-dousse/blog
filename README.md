@@ -43,3 +43,10 @@ refactoring using Partials to render forms
 => generator :  `bin/rails generate migration AddStatusToArticles status:string`
                 `bin/rails generate migration AddStatusToComments status:string`
 run the migration with `bin/rails db:migrate`
+
+add a delete comment feature and make sure the comments are deleted when the article their are attached to is deleted
+
+### Security
+basic authentication : `http_basic_authenticate_with`
+  
+
