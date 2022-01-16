@@ -39,4 +39,7 @@ run the migration with `bin/rails db:migrate`
 
 refactoring using Partials to render forms
 
-
+### using Concerns
+=> generator :  `bin/rails generate migration AddStatusToArticles status:string`
+                `bin/rails generate migration AddStatusToComments status:string`
+run the migration with `bin/rails db:migrate`
