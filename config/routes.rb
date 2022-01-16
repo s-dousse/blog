@@ -1,7 +1,10 @@
 Rails.application.routes.draw do
   root "articles#index"
 
-  resources :articles
+  resources :articles do
+    resources :comments # nested resource
+  end
+  
   # Prefix
   # ROOT:         get   "/articles", to: "articles#index"
   # articles      get   "/articles/:id", to: "articles#show"

@@ -29,4 +29,10 @@ table structure / data type:
 - `t.timestamps` creates two extra columns : `create_at` and `updated_at`
   run the migration with `bin/rails db:migrate`
 
-louch the console `bin/rails console`
+implement all CRUD operation on the resource :article
+
+### add a second Model
+
+=> generator : `bin/rails generate model Comment commenter:string body:text article:references`
+run the migration with `bin/rails db:migrate`
+=> generator : `bin/rails generate controller Comments`
