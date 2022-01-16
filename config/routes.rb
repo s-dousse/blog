@@ -9,4 +9,5 @@ Rails.application.routes.draw do
   #               post  "/articles(.:format)", to: "articles#create"
   # edit_article  get   "/articles/:id/edit(.:format)", to: ""articles#edit"
   #               patch  "/articles/:id(.:format)", to: "articles#update"
+  #               delete "/articles/:id(.:format)", to: "articles#destroy"
 end

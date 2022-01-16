@@ -4,4 +4,8 @@
 
 <ul>
   <li><%= link_to "Edit", edit_article_path(@article)%></li>
+  <li><%= link_to "Destroy", article_path(@article), data: {
+                    turbo_method: :delete,         # make a DELETE request instead of a GET reques
+                    turbo_confirm: "Are You sure?" # confirmation dialog to appear when the link is clicked
+                    } %></li>
 </ul>
