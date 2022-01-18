@@ -1,7 +1,9 @@
 class ArticlesController < ApplicationController
 
-  http_basic_authenticate_with name: "dhh", password: "secret", except: [:index, :show]
+  #tp_basic_authenticate_with name: "dhh", password: "secret", except: [:index, :show]
   # user to be authenticated on every action except index and show
+
+  before_action :authenticate_user!
 
   def index
     @articles = Article.all
