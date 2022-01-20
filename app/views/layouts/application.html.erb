@@ -10,7 +10,14 @@
     <%= javascript_importmap_tags %>
   </head>
   <body>
+    <p class="notice"><%= notice %></p>
+    <p class="alert"><%= alert %></p>
+
+    <% if user_signed_in? %>
     <h1>Hello, Rails!</h1>
     <%= yield %>
+    <% else %>
+    <a href="/users/sign_in">Sign in</a>
+    <% end %>
   </body>
 </html>
